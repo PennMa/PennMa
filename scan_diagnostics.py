@@ -197,7 +197,7 @@ async def scan(url: str) -> dict:
 
         # ── Desktop ───────────────────────────────────────────────────────
         print("[1/3] Desktop scan ...")
-        ctx_desktop = await browser.new_context(viewport={"width": 1280, "height": 800})
+        ctx_desktop = await browser.new_context(viewport={"width": 1280, "height": 800}, ignore_https_errors=True)
         pg_desktop  = await ctx_desktop.new_page()
         desktop_data = await collect_page_data(pg_desktop, ctx_desktop, "desktop")
         await pg_desktop.screenshot(path="screenshot_desktop.png", full_page=True)
@@ -205,7 +205,7 @@ async def scan(url: str) -> dict:
 
         # ── Mobile ────────────────────────────────────────────────────────
         print("[2/3] Mobile scan (iPhone 14 Pro emulation) ...")
-        ctx_mobile = await browser.new_context(**MOBILE_DEVICE)
+        ctx_mobile = await browser.new_context(**MOBILE_DEVICE, ignore_https_errors=True)
         pg_mobile  = await ctx_mobile.new_page()
         mobile_data = await collect_page_data(pg_mobile, ctx_mobile, "mobile")
         await pg_mobile.screenshot(path="screenshot_mobile.png", full_page=True)
