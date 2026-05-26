@@ -1,0 +1,8 @@
+{
+  "url": "https://www.beiyutitanium.com",
+  "scan_time": "2026-05-26T06:05:02.881892",
+  "pages": [],
+  "summary": {
+    "fatal": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.beiyutitanium.com/\nCall log:\n  - navigating to \"https://www.beiyutitanium.com/\", waiting until \"networkidle\"\n"
+  }
+}
