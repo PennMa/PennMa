@@ -1,8 +1,149 @@
 {
   "url": "https://www.beiyutitanium.com",
-  "scan_time": "2026-05-26T06:05:02.881892",
-  "pages": [],
+  "scan_time": "2026-05-26T06:29:08.348287",
+  "desktop": {
+    "label": "desktop",
+    "http_status": 403,
+    "load_time_sec": 0.62,
+    "performance": {
+      "dns": 0,
+      "tcp": 1,
+      "ttfb": 18,
+      "dom_loaded": 114,
+      "full_load": 115,
+      "transfer_size": 321,
+      "encoded_body": 21
+    },
+    "seo": {
+      "title": "",
+      "description": null,
+      "og_title": null,
+      "og_image": null,
+      "canonical": null,
+      "h1_count": 0,
+      "h1_text": null,
+      "img_total": 0,
+      "img_no_alt": 0,
+      "lang": null,
+      "has_viewport": false,
+      "viewport_content": null
+    },
+    "mobile": {
+      "min_font_size": null,
+      "tiny_tap_targets": [],
+      "tiny_targets_total": 0,
+      "has_horiz_scroll": false,
+      "body_scroll_width": 1264,
+      "window_width": 1280,
+      "wide_elements": [],
+      "has_media_queries": false,
+      "small_inputs": 0,
+      "has_flash": false,
+      "has_popups": false
+    },
+    "links": {
+      "total": 0,
+      "internal": 0,
+      "external": 0,
+      "broken": []
+    },
+    "console_errors": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 403 ()"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 403 ()"
+      }
+    ],
+    "failed_requests": []
+  },
+  "mobile": {
+    "label": "mobile",
+    "http_status": 403,
+    "load_time_sec": 0.61,
+    "performance": {
+      "dns": 0,
+      "tcp": 2,
+      "ttfb": 5,
+      "dom_loaded": 108,
+      "full_load": 109,
+      "transfer_size": 321,
+      "encoded_body": 21
+    },
+    "seo": {
+      "title": "",
+      "description": null,
+      "og_title": null,
+      "og_image": null,
+      "canonical": null,
+      "h1_count": 0,
+      "h1_text": null,
+      "img_total": 0,
+      "img_no_alt": 0,
+      "lang": null,
+      "has_viewport": false,
+      "viewport_content": null
+    },
+    "mobile": {
+      "min_font_size": null,
+      "tiny_tap_targets": [],
+      "tiny_targets_total": 0,
+      "has_horiz_scroll": false,
+      "body_scroll_width": 964,
+      "window_width": 980,
+      "wide_elements": [],
+      "has_media_queries": false,
+      "small_inputs": 0,
+      "has_flash": false,
+      "has_popups": false
+    },
+    "links": {
+      "total": 0,
+      "internal": 0,
+      "external": 0,
+      "broken": []
+    },
+    "console_errors": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 403 ()"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 403 ()"
+      }
+    ],
+    "failed_requests": []
+  },
   "summary": {
-    "fatal": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.beiyutitanium.com/\nCall log:\n  - navigating to \"https://www.beiyutitanium.com/\", waiting until \"networkidle\"\n"
+    "total_issues": 14,
+    "issues": {
+      "desktop": [
+        "HTTP 403",
+        "Missing <title>",
+        "Missing meta description",
+        "No <h1> tag",
+        "Missing <html lang>",
+        "2 JS console error(s)"
+      ],
+      "mobile": [
+        "HTTP 403",
+        "Missing <title>",
+        "Missing meta description",
+        "No <h1> tag",
+        "Missing <html lang>",
+        "2 JS console error(s)",
+        "Missing viewport meta tag",
+        "No CSS media queries detected (may not be responsive)"
+      ],
+      "shared": []
+    },
+    "screenshots": [
+      "screenshot_desktop.png",
+      "screenshot_mobile.png",
+      "screenshot_mobile_viewport.png"
+    ]
   }
 }
